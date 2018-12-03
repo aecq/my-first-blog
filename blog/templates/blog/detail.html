@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MathJax AsciiMath Test Page</title>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
+</script>
+</head>
+<body>
+<h1>{{ blog.title }}</h1>
+
+<div id="pop">
+{{ blog_content | safe }}
+</div>
+
+</body>
+</html>

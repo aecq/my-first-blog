@@ -8,7 +8,9 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [ ['$$','$$'], ["\[","\]"] ]
+		  }
 });
 </script>
 </head>
